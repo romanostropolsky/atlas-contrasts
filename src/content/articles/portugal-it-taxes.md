@@ -1,45 +1,35 @@
 ---
-title: "Налоги для IT-специалистов в Португалии: Полное руководство"
-description: "Узнайте всё о налогообложении IT-специалистов в Португалии, режимах NHR и актуальных ставках для резидентов."
+title: "Portugal IT Taxes and NHR 2.0: The Ultimate Expat Guide for 2026"
+description: "A comprehensive analysis of taxation for IT professionals, developers, and remote workers moving to Portugal under current regulations and incentive frameworks."
+pubDate: 2026-06-05
 ---
-<h2>Налоги для IT-специалистов в Португалии</h2>
-<p>Португалия становится все более популярной страной для IT-специалистов благодаря своим налоговым льготам и положению на карте Европы. В этой статье мы рассмотрим основные аспекты налогообложения для специалистов в области информационных технологий.</p>
 
-<h3>Основные налоговые обязательства</h3>
-<p>IT-специалисты в Португалии должны учитывать несколько основных налогов:</p>
-<ul>
-  <li><strong>Подоходный налог (IRS)</strong>: применяется к доходам физических лиц и зависит от налогового класса.</li>
-  <li><strong>НДС (IVA)</strong>: в большинстве случаев применяется к услугам, предоставляемым клиентам.</li>
-  <li><strong>Социальные взносы</strong>: обязательные взносы в систему социального обеспечения.</li>
-</ul>
+# Portugal IT Taxes and NHR 2.0: The Ultimate Expat Guide
 
-<h3>Ставки подоходного налога</h3>
-<p>Подоходный налог в Португалии варьируется в зависимости от уровня дохода. В 2023 году ставки следующие:</p>
-<ul>
-  <li>до €7,112 — 14%</li>
-  <li>от €7,112 до €10,732 — 23%</li>
-  <li>от €10,732 до €20,322 — 28%</li>
-  <li>от €20,322 до €25,075 — 35%</li>
-  <li>от €25,075 до €36,967 — 37%</li>
-  <li>от €36,967 до €80,000 — 45%</li>
-  <li>свыше €80,000 — 48%</li>
-</ul>
+Portugal has long stood as a beacon for digital nomads, tech entrepreneurs, and remote software engineers seeking a high quality of life combined with strategic tax optimization. Following legislative shifts and the evolution of the non-habitual residency (NHR) framework into targeted incentive schemes (often referred to as NHR 2.0 or the *Incentivo Fiscal à Investigação Científica e Inovação*), understanding the local tax landscape is crucial for anyone planning relocation.
 
-<h3>Налоговые льготы для IT-специалистов</h3>
-<p>Правительство Португалии предлагает ряд налоговых льгот для IT-специалистов, включая:</p>
-<ul>
-  <li><strong>Льготы для стартапов</strong>: налоговые каникулы и сниженные ставки для новых компаний.</li>
-  <li><strong>Налоговые кредиты</strong>: для компаний, инвестирующих в исследования и разработки.</li>
-  <li><strong>Программа NHR (Non-Habitual Resident)</strong>: позволяет иностранным специалистам получить сниженные налоговые ставки на определенные доходы.</li>
-</ul>
+![A modern co-working space in Lisbon with software engineers collaborating](watermarked_img_workspace.png)
 
-<h3>Подготовка налоговой декларации</h3>
-<p>Налоговая декларация для IT-специалистов подается ежегодно. Основные этапы:</p>
-<ul>
-  <li>Сбор документов, подтверждающих доходы и расходы.</li>
-  <li>Заполнение декларации через онлайн-портал.</li>
-  <li>Подача декларации до 30 апреля следующего года.</li>
-</ul>
+## 1. Core Tax Principles for Tax Residents in Portugal
 
-<h3>Заключение</h3>
-<p>Налоги в Португалии могут показаться сложными, но с правильной информацией и консультацией профессионалов можно максимально эффективно управлять своими налоговыми обязательствами. Португалия предлагает привлекательные налоговые условия для IT-специалистов, что делает страну привлекательной для работы и жизни.</p>
+To understand how your income as an IT professional will be taxed, you must first establish your residency status. You are considered a tax resident in Portugal if you spend **more than 183 days** in the country within a 12-month period, or if you maintain a primary residence intended to be occupied as your habitual home.
+
+*   **Progressive Tax Brackets:** Resident income tax (*IRS*) is levied at progressive rates ranging from 13% up to 48% for higher income brackets, depending on annual earnings.
+*   **Worldwide Income:** Standard residents are taxed on their worldwide income, encompassing foreign remote salaries, dividends, and capital gains.
+*   **Social Security (*Segurança Social*):** Independent contractors (freelancers/contractors operating as *Trabalhadores Independentes*) must contribute to social security, typically at a baseline rate of 21.43% on a calculated base.
+
+## 2. The Evolution of Tax Incentives: NHR and Beyond
+
+While the original Non-Habitual Resident (NHR) regime offered a flat 20% tax rate on qualifying high-value professions and tax exemptions on foreign-source passive income, access has been restricted. 
+
+Current alternative structures favor specific profiles:
+1.  **Scientific Research and Innovation (IFICI):** A specialized 20% flat tax rate applies specifically to eligible roles in R&D, higher education teaching, and certified tech innovation.
+2.  **Startup Visa & Tech Visas:** Designed to fast-track non-EU tech founders and skilled employees into the Portuguese ecosystem with streamlined bureaucratic processing.
+
+```json
+{
+  "tax_regime": "IFICI / NHR Successor",
+  "flat_tax_rate": "20%",
+  "eligible_sectors": ["Software Engineering", "AI/ML Research", "Fintech Architecture"],
+  "duration_cap": "10 consecutive years"
+}
