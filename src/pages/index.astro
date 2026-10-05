@@ -1,0 +1,65 @@
+---
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('articles');
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas Contrasts — Global Macro-Analytical Hub</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: #0f172a;
+        color: #f8fafc;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        line-height: 1.6;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        background: linear-gradient(to right, #38bdf8, #818cf8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .subtitle {
+        color: #94a3b8;
+        margin-bottom: 40px;
+      }
+      .article-card {
+        background: #1e293b;
+        border: 1px solid #334155;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+      a {
+        color: #38bdf8;
+        text-decoration: none;
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Atlas Contrasts</h1>
+    <p class="subtitle">Global analytical hub for macro-trends, economic contrasts, and geopolitical insights.</p>
+
+    <h2>Latest Insights & Articles</h2>
+    <div>
+      {articles.map((article) => (
+        <div class="article-card">
+          <a href={`/articles/${article.slug}`}>{article.data.title}</a>
+          <p>{article.data.description}</p>
+        </div>
+      ))}
+    </div>
+  </body>
+</html>
