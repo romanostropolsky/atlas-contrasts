@@ -8,8 +8,6 @@ pubDate: 2026-06-05
 
 Portugal has long stood as a beacon for digital nomads, tech entrepreneurs, and remote software engineers seeking a high quality of life combined with strategic tax optimization. Following legislative shifts and the evolution of the non-habitual residency (NHR) framework into targeted incentive schemes (often referred to as NHR 2.0 or the *Incentivo Fiscal à Investigação Científica e Inovação*), understanding the local tax landscape is crucial for anyone planning relocation.
 
-![A modern co-working space in Lisbon with software engineers collaborating](watermarked_img_workspace.png)
-
 ## 1. Core Tax Principles for Tax Residents in Portugal
 
 To understand how your income as an IT professional will be taxed, you must first establish your residency status. You are considered a tax resident in Portugal if you spend **more than 183 days** in the country within a 12-month period, or if you maintain a primary residence intended to be occupied as your habitual home.
