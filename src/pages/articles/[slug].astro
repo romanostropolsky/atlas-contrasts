@@ -11,13 +11,18 @@ export async function getStaticPaths() {
 
 const { article } = Astro.props;
 const { Content } = await article.render();
+const { title, description, pubDate, image } = article.data;
+const dateLabel = pubDate
+  ? pubDate.toLocaleDateString('es', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })
+  : '';
 ---
 
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{article.data.title} | Atlas Contrasts</title>
+    <meta name="description" content={description} />
+    <title>{title} | Atlas Contrasts</title>
     <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -42,17 +47,67 @@ const { Content } = await article.render();
         margin-bottom: 20px;
         color: #f8fafc;
       }
+      .date {
+        color: #94a3b8;
+        font-size: 0.9rem;
+        margin: 0 0 10px;
+      }
+      .cover {
+        display: block;
+        width: 100%;
+        max-height: 360px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
       hr {
         border: 0;
         border-top: 1px solid #334155;
         margin: 30px 0;
+      }
+      /* Стилі для вмісту статті (він виводиться через <Content />, тому :global) */
+      article :global(a) {
+        color: #38bdf8;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      article :global(a:hover) {
+        color: #7dd3fc;
+      }
+      article :global(a:visited) {
+        color: #a5b4fc;
+      }
+      article :global(img) {
+        max-width: 100%;
+        height: auto;
+      }
+      article :global(table) {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+      article :global(th),
+      article :global(td) {
+        border: 1px solid #334155;
+        padding: 8px 10px;
+        text-align: left;
+        vertical-align: top;
+      }
+      article :global(th) {
+        background: #1e293b;
       }
     </style>
   </head>
   <body>
     <a class="back" href="/">&larr; Back to Atlas Contrasts</a>
     <article>
-      <h1>{article.data.title}</h1>
+      {image && <img class="cover" src={image} alt={title} />}
+      <h1>{title}</h1>
+      {dateLabel && <p class="date">{dateLabel}</p>}
       <hr />
       <Content />
     </article>
