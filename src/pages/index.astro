@@ -4,10 +4,11 @@ import { getCollection } from 'astro:content';
 const articles = await getCollection('articles');
 ---
 
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Atlas Contrasts: contrastes económicos, geográficos y políticos explicados con datos." />
     <title>Atlas Contrasts — Global Macro-Analytical Hub</title>
     <style>
       body {
@@ -37,6 +38,14 @@ const articles = await getCollection('articles');
         border-radius: 8px;
         margin-bottom: 15px;
       }
+      .thumb {
+        display: block;
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 12px;
+      }
       a {
         color: #38bdf8;
         text-decoration: none;
@@ -56,6 +65,9 @@ const articles = await getCollection('articles');
     <div>
       {articles.map((article) => (
         <div class="article-card">
+          {article.data.image && (
+            <img class="thumb" src={article.data.image} alt={article.data.title} loading="lazy" />
+          )}
           <a href={`/articles/${article.slug}`}>{article.data.title}</a>
           <p>{article.data.description}</p>
         </div>
